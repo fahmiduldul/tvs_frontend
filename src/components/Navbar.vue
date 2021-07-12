@@ -17,7 +17,6 @@
 					<!-- each item or link is a li inside here -->
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						
-						<router-link></router-link>
 						<li class="nav-item">
 							<a href="#" class="nav-link" :class="{active : true}">link one</a>
 						</li>

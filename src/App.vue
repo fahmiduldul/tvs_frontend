@@ -5,7 +5,7 @@
     <router-link to="/about">About</router-link>
   </div>
   <router-view/>
-  
+  <poll :pollId="'tvs'" />
 </template>
 
 <script lang="ts">

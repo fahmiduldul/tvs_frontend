@@ -2,10 +2,10 @@
   <!-- vote options -->
   <div class="row">
     <div class="col">
-      <card :pollId="pollId" :vote="'a'"></card>
+      <card :pollId="pollId" :vote="'a'" />
     </div>
     <div class="col">
-      <card :pollId="pollId" :vote="'a'"></card>
+      <card :pollId="pollId" :vote="'b'" />
     </div>
   </div>
 </template>
@@ -18,7 +18,7 @@ import polls from '@/config/voteOptions'
 
 export default defineComponent({
   props:{
-    pollId:{type: String as PropType<PollId>}
+    pollId:{required: true, type: String as PropType<PollId>}
   },
   components:{card},
   data(){

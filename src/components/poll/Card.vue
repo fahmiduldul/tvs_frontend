@@ -1,12 +1,12 @@
 <template>
   <div class="card">
     <!-- card image -->
-    <img :src="assetPath" class="card-img-top" alt="...">
+    <img :src="require('@/assets/' + tempPath)" class="card-img-top">
 
     <!-- card image -->
     <div class="card-body">
       <!-- card context -->
-      <h5 class="card-title">{{poll.options[vote].voteTitle}}}</h5>
+      <h5 class="card-title">{{poll.options[vote].voteTitle}}</h5>
       <p class="card-text">{{poll.options[vote].voteText}}</p>
 
       <!-- vote button -->
@@ -22,12 +22,13 @@ import {PollId, VoteChoice} from '@/interfaces/shared';
 
 export default defineComponent({
   props:{
-    pollId:{type:Object as PropType<PollId>},
-    vote:{type:Object as PropType<VoteChoice>},
+    pollId:{required: true,type:String as PropType<PollId>},
+    vote:{required: true,type:String as PropType<VoteChoice>},
   },
   data(){
     return{
-      poll:polls[this.pollId]
+      poll:polls[this.pollId],
+      tempPath:"logo.png"
     }
   },
   methods:{
@@ -36,9 +37,9 @@ export default defineComponent({
     }
   },
   computed:{
-    assetPath():string{
-      return '@/assets/' + this.poll.options[this.vote].voteId
-    }
+    // assetPath():string{
+    //   return '@/assets/' + this.poll.options[this.vote].voteId
+    // }
   }
 
 })
