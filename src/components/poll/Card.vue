@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <!-- card image -->
-    <img :src="require('@/assets/' + tempPath)" class="card-img-top">
+    <img :src="require('@/assets/' + tempPath)" class="card-img-top" style="width:200px">
 
     <!-- card image -->
     <div class="card-body">
