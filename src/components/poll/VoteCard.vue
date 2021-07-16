@@ -18,11 +18,11 @@
 <script lang="ts">
 import {defineComponent, PropType} from 'vue';
 import polls from '@/config/voteOptions';
-import {PollId, VoteChoice} from '@/interfaces/shared';
+import {PollIds, VoteChoice} from '@/interfaces/shared';
 
 export default defineComponent({
   props:{
-    pollId:{required: true,type:String as PropType<PollId>},
+    pollId:{required: true,type:String as PropType<PollIds>},
     vote:{required: true,type:String as PropType<VoteChoice>},
   },
   data(){
