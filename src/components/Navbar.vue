@@ -19,6 +19,8 @@
             <nav-vue-router :to="'/'">Home</nav-vue-router>
 
             <nav-vue-router :to="'/auth'">Login/Signup</nav-vue-router>
+
+            <nav-vue-router :to="'/dashboard'">Dashboard</nav-vue-router>
           </ul>
 
           <!--right side og navbar-->

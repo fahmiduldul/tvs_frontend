@@ -12,13 +12,13 @@
 
 <script lang="ts">
 import { defineComponent, PropType } from 'vue'
-import card from '@/components/poll/Card.vue'
-import {PollId} from '@/interfaces/shared'
+import card from '@/components/poll/VoteCard.vue'
+import {PollIds} from '@/interfaces/shared'
 import polls from '@/config/voteOptions'
 
 export default defineComponent({
   props:{
-    pollId:{required: true, type: String as PropType<PollId>}
+    pollId:{required: true, type: String as PropType<PollIds>}
   },
   components:{card},
   data(){
