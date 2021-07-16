@@ -1,6 +1,6 @@
-import {PollId, Poll} from '@/interfaces/shared'
+import {PollIds, Poll} from '@/interfaces/shared'
 
-const polls:Record<PollId,Poll> = {
+const polls:Record<PollIds,Poll> = {
   "tvs":{
     title:"Tab VS Space",
     options:{

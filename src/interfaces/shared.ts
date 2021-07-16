@@ -1,4 +1,4 @@
-export type PollId = 'tvs';
+export type PollIds = 'tvs';
 
 export interface Poll{
   title: string,

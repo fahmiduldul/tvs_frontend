@@ -2,7 +2,6 @@
   <div class="container">
     <h2>TODAY FIGHT</h2>
     <carousel  title="Tab VS Space!"/>
-    <router-link to="/auth">test</router-link>
   </div>
 </template>
 
