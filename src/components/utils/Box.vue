@@ -1,5 +1,5 @@
 <template>
-  <div id="box" class="p-2 mx-auto my-3">
+  <div id="box" class="py-3 px-2 mx-auto my-3">
     <slot name="header"></slot>
     <slot></slot>
   </div>
@@ -21,7 +21,7 @@ export default defineComponent({
 <style scoped>
 #box{
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   border: darkgray solid 1px;
   border-radius: 5px;
 }

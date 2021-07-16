@@ -9,17 +9,21 @@
           <form method="post" action="#" v-on:submit.prevent>
             <div class="mb-3">
               <!--              <label for="emailLogin" class="form-label">Email</label>-->
-              <input type="email" class="form-control" id="emailLogin" placeholder="Email">
+              <input type="email" class="form-control" id="emailLogin" placeholder="Email" name="email">
+            </div>
+            <div class="mb-3">
+              <!--              <label for="emailLogin" class="form-label">Email</label>-->
+              <input type="text" class="form-control" id="nameLogin" placeholder="Name" name="name">
             </div>
 
             <div class="mb-3">
               <!--              <label for="passwordLogin" class="form-label">Password</label>-->
-              <input type="password" class="form-control" id="passwordLogin" placeholder="Password">
+              <input type="password" class="form-control" id="passwordLogin" placeholder="Password" name="password">
             </div>
 
             <div class="mb-3">
               <!--              <label for="passwordLogin" class="form-label">Password</label>-->
-              <input type="password" class="form-control" id="passConfLogin" placeholder="Confirm password">
+              <input type="password" class="form-control" id="passConfLogin" placeholder="Confirm password" name="confirmPassword">
             </div>
 
             <div class="mb-3">

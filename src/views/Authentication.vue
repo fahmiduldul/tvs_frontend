@@ -1,10 +1,10 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 col-sm-12" id="left-col">
+      <div class="col-lg-7 col-sm-12" id="left-col">
         <login />
       </div>
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-5 col-sm-12">
         <signup />
       </div>
     </div>
@@ -25,7 +25,5 @@ export default defineComponent({
 </script>
 
 <style scoped>
-#left-col{
-  border-right: #666 1px solid;
-}
+
 </style>
