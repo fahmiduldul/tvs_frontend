@@ -1,18 +1,22 @@
 <template>
-  <div class="home container">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div class="container">
+    <h2>TODAY FIGHT</h2>
+    <carousel  title="Tab VS Space!"/>
+    <router-link to="/auth">test</router-link>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import carousel from '@/components/utils/Carousel.vue'
 
 export default defineComponent({
   name: 'Home',
-  components: {
-    HelloWorld,
-  },
+  components: {carousel},
+  data(){
+    return {
+      tempPath:'logo.png'
+    }
+  }
 });
 </script>
