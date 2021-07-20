@@ -1,7 +1,8 @@
 <template>
   <div class="card">
     <!-- card image -->
-    <img :src="require('@/assets/' + tempPath)" class="card-img-top" style="width:200px">
+    <img :src="require('@/assets/' + poll.options[vote].voteImage)"
+         class="card-img-top rounded mx-auto py-1 d-block" style="width:150px; height: 150px">
 
     <!-- card image -->
     <div class="card-body">
@@ -45,6 +46,10 @@ export default defineComponent({
 })
 </script>
 
-<style>
+<style scoped>
+.card{
+  border: darkgray solid 1px;
+  border-radius: 5px;
+}
 
 </style>

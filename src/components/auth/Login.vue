@@ -32,10 +32,16 @@
 <script lang="ts">
 import {defineComponent} from "vue";
 import box from '@/components/utils/Box.vue';
+import {useStore} from "@/store";
 
 export default defineComponent({
   name: "login",
-  components:{box}
+  components:{box},
+  setup(){
+    const store = useStore();
+
+    let str: string = store.state.jwt;
+  }
 })
 </script>
 

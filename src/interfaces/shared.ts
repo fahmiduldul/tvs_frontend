@@ -13,4 +13,5 @@ export interface Vote {
   voteId:string,
   voteTitle:string,
   voteText:string
+  voteImage:string
 }
